@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0a1f1f;
+  --bg-secondary: #0d2b2b;
+  --teal-light: #9FE1CB;
+  --teal-mid: #5DCAA5;
+  --teal-dark: #1D9E75;
+  --text-white: #ffffff;
+  --text-muted: #a0b8b4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--teal-dark); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--teal-mid); }
